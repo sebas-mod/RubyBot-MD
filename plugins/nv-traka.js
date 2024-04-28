@@ -1,5 +1,5 @@
 const handler = async (m, {conn, usedPrefix}) => {
-  if (usedPrefix == 'traka' || usedPrefix == 'A' || usedPrefix == '*' || usedPrefix == '#') return;
+  if (usedPrefix == 'traka' || usedPrefix == 'Traka' || usedPrefix == '*' || usedPrefix == '#') return;
   if (!db.data.chats[m.chat].audios) return;
   if (!db.data.settings[conn.user.jid].audios_bot && !m.isGroup) return;
   //const s = seconds: '1934.4'
