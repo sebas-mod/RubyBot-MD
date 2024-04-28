@@ -1,4 +1,5 @@
-const handler = async (m, {conn}) => {
+const handler = async (m, {conn, usedPrefix}) => {
+  if (usedPrefix == 'a' || usedPrefix == 'A' || usedPrefix == '*' || usedPrefix == '#') return;
   if (!db.data.chats[m.chat].audios) return;
   if (!db.data.settings[conn.user.jid].audios_bot && !m.isGroup) return;
   //const s = seconds: '1934.4'
@@ -6,6 +7,19 @@ const handler = async (m, {conn}) => {
   conn.sendPresenceUpdate('recording', m.chat);
   conn.sendMessage(m.chat, {audio: {url: vn}, ptt: true, mimetype: 'audio/mpeg', fileName: `traka.mp3`}, {quoted: m});
 };
-handler.customPrefix = /trakaaa|traka|Traka/
-handler.command = /^(traka|trakaaa|Traka$)/
+handler.command = /^(traka|Traka)$/i;
+handler.fail = null;
+handler.exp = 100;
 export default handler;
+
+
+/* import util from 'util'
+import path from 'path'
+let handler = async (m, { conn }) => {
+if (!db.data.chats[m.chat].audios && m.isGroup) throw 0
+let vn = './media/toma.mp3'
+conn.sendFile(m.chat, vn, 'toma.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+handler.command = /^(:c|c)$/i
+handler.fail = null
+handler.exp = 100
+export default handler*/
