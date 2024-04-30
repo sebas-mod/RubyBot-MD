@@ -74,6 +74,7 @@ global.gt = '𝑳𝒖𝒄𝒌𝒚𝑩𝒐𝒕-𝑴𝑫 🐲';
 global.mysticbot = '𝑳𝒖𝒄𝒌𝒚𝑩𝒐𝒕-𝑴𝑫 🐲';
 global.md = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6';
 global.mysticbot = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6';
+global.fgbot = 'https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6';
 global.waitt = '🐲 𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐...';
 global.waittt = '🐲 𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐...';
 global.waitttt = '🐲 𝑪𝒂𝒓𝒈𝒂𝒏𝒅𝒐...';
