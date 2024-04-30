@@ -12,10 +12,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   let play = `
         ≡ *FG MUSIC*
 ┌──────────────
-▢ 📌 *${mssg.title}:* ${vid.title}
-▢ 📆 *${mssg.aploud}:* ${vid.ago}
-▢ ⌚ *${mssg.duration}:* ${vid.timestamp}
-▢ 👀 *${mssg.views}:* ${vid.views.toLocaleString()}
+video
 └──────────────`
  await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
     ['grupo', `${fgbot}`],
