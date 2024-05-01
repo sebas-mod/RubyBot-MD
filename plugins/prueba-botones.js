@@ -6,7 +6,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
 HOLA EL TESS
 🚫 ${mssg.gpNsfw(usedPrefix)}`
-          await conn.sendButton2(m.chat, botones, mssg.ig, thumbnail, [
+          await conn.sendButton2(m.chat, botones, thumbnail, [
     ['Canal', `${usedPrefix}menu`],
     ['Canal', `${usedPrefix}menuff`]
   ], null, [['Canal', `${fgbot}`]], m)
