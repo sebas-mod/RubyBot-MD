@@ -1,42 +1,61 @@
 
-import fetch from "node-fetch"
-let handler = async (m, { conn, args, usedPrefix, command }) => {
+import fetch from 'node-fetch'
+let handler = async (m, { conn, usedPrefix, command }) => {
 
-        let username = [
-    'c.sol_',
-    'nuriaarancibiaa',
-    'laurasofiadepende',
-    'mariana.30027',
-    'kyarak_',
-    'luly.mix',
-    'melodyvalenzuelar',
-    'michitasnow',
-    'iamjossaryvallejos10',
-    'notaestheticallyhannah_',
-    '_marinazarrocaa_'
-  ]
-  let pickuser = username[Math.floor(Math.random() * username.length)]
-  let query = args[0] ? args[0] : pickuser
+        if (!global.db.data.chats[m.chat].nsfw) throw `🚫 ${mssg.gpNsfw(usedPrefix)}`
+   let user = global.db.data.users[m.sender].age
+   if (user < 17) throw `❎ ${mssg.nsfwAge}`
 
-  try { 
-          let res = await fetch(global.API('fgmods', '/api/img/asupan-tt', { username: query }, 'apikey'))
-     let video = await res.json()
-     //conn.sendFile(m.chat, video.result, 'vid.mp4', ` ${mssg.result}`, m) 
-     conn.sendButton2(m.chat,` ${mssg.result}`, mssg.ig, video.result, [['SIGUIENTE', `${usedPrefix + command}`]], null, null, m) 
-     m.react(dmoji)
+   m.react(rwait)
 
-           } catch (error) {
-     let img = await conn.getFile(global.API('fgmods', '/api/img/asupan-la', { }, 'apikey'))
-    let asupan = img.data
-    conn.sendFile(m.chat, asupan, 'vid.mp4', ` ${mssg.result}`, m)
-    m.react('🤓')
-  }
+let type = (command).toLowerCase()
+switch (type) {
 
+case 'ass':
+case 'culos':
+    let as = await conn.getFile(global.API('fgmods', '/api/nsfw/ass', { }, 'apikey'))
+    conn.sendFile(m.chat, as.data, 'img.jpg', `✅ ${mssg.random} *${command}*`, m)
+    //conn.sendButton(m.chat, `✅ ${mssg.random} *${command}*`, fgyt, as.data, [[`▷▷ ${msg.next()}`, `${usedPrefix + command}`]], m)
+   m.react(xmoji) 
+break
+
+case 'boobs':
+case 'boobies':
+    let xb = await conn.getFile(global.API('fgmods', '/api/nsfw/boobs', { }, 'apikey'))
+    conn.sendFile(m.chat, xb.data, 'img.jpg', `✅ ${mssg.random} *${command}*`, m)
+   m.react(xmoji) 
+break
+
+case 'pussy':
+    let xp = await conn.getFile(global.API('fgmods', '/api/nsfw/pussy', { }, 'apikey'))
+    conn.sendFile(m.chat, xp.data, 'img.jpg', `✅ ${mssg.random} *${command}*`, m)
+    m.react(xmoji) 
+break
+
+case 'lesbians':
+case 'lesbian':
+    let les = await conn.getFile(global.API('fgmods', '/api/nsfw/lesbian', { }, 'apikey'))
+    conn.sendFile(m.chat, les.data, 'img.jpg', `✅ ${mssg.random} *${command}*`, m)
+    m.react(xmoji) 
+break
+
+case 'pack':
+case 'cosplay':
+             let img = await conn.getFile(global.API('fgmods', '/api/nsfw/cosplay', { }, 'apikey'))
+        conn.sendFile(m.chat, img.data, 'img.jpg', `✅ ${mssg.result} 🤭`, m)
+             m.react(xmoji) 
+        break
+
+
+default:
+ }
 }
-handler.help = ['tvid']
-handler.tags = ['img']
-handler.command = ['asupan', 'tvid', 'videos', 'vid', 'video']
-handler.premium = false
+
+handler.help = ['ass', 'boobs', 'lesbian', 'pack', 'pussy']
+handler.tags = ['nsfw']
+handler.command = /^(ass|culos|boobs|boobies|lesbian|lesbians|pussy|cosplay|pack)$/i
 handler.diamond = true
+handler.register = true
+handler.group = true
 
 export default handler
