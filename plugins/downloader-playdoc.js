@@ -86,6 +86,11 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*';
   }
 };
+              nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+            buttons: [
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\".grupos\",\"id\":\"message\"}"
 handler.help = ['play3', 'play4'].map((v) => v + ' < busqueda >');
 handler.tags = ['downloader'];
 handler.command = /^(playdoc|playdoc2|play3|play4)$/i;
