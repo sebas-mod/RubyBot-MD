@@ -30,7 +30,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                 "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\"quick_reply\",\"id\":\"message\"}"
+                "buttonParamsJson": "{\"display_text\":\".menu\",\"id\":\"message\"}"
               },
               {
                  "name": "cta_url",
