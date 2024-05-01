@@ -30,7 +30,7 @@ let msg = generateWAMessageFromContent(m.chat, {
               },
               {
                  "name": "cta_url",
-                 "buttonParamsJson": "{\"display_text\":\"url\",\"grupo\":\"https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6\",\"merchant_url\":\"https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6"}"
+                 "buttonParamsJson": "{\"display_text\":\"grupo\",\"grupo\":\"https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6\",\"merchant_url\":\"https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6"}"
               },
               {
                  "name": "cta_call",
