@@ -9,18 +9,15 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
         let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
         //const url = 'https://www.youtube.com/watch?v=' + videoId
   let play = `
-        ≡ *FG MUSIC*
-┌──────────────
-video
-└──────────────`
- await conn.sendButton2(m.chat, play7, thumbnail, [
+        ≡ *BOTONES*
+ await conn.sendButton2(m.chat, botones, thumbnail, [
     ['grupo', `${fgbot}`],
     ['grupo', `${fgbot}`]
   ], null, [['grupo', `${fgbot}`]], m)
 }
-handler.help = ['play7']
+handler.help = ['botones']
 handler.tags = ['dl']
-handler.command = ['play7', 'playvid']
+handler.command = ['botones', 'botones']
 handler.disabled = false
 
 export default handler
