@@ -25,6 +25,11 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 ❏ 🔗 *Link:* ${yt_play[0].url}\n
 ❏ *_Enviando ${additionalText}, aguarde un momento．．．_*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
+    await conn.sendButton2(m.chat, play3, thumbnail, [
+    ['🎶GRUPO', `${fgbot}`],
+    ['🎥GRUPO', `${fgbot}`]
+  ], null, [['Canal', `${fgbot}`]], m)
+}
     if (command == 'play3' || command == 'playdoc') {
       try {
         const q = '128kbps';
