@@ -33,6 +33,11 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃╰─────────────────
 ┗━═━═━═━═━═━═━═━═━═━┛
 
+await conn.sendButton2(m.chat, botones, thumbnail, [
+    ['Canal', `${usedPrefix}menu`],
+    ['Canal', `${usedPrefix}menuff`]
+  ], null, [['Canal', `${fgbot}`]], m)
+}
 `.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
