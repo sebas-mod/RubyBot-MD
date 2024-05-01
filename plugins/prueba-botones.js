@@ -1,24 +1,42 @@
 
-import yts from 'yt-search'
-let handler = async (m, { conn, command, text, usedPrefix }) => {
+import fetch from "node-fetch"
+let handler = async (m, { conn, args, usedPrefix, command }) => {
 
-  if (!text) throw `✳️ ponga el nombre de la canción *${usedPrefix + command}* brattyputy`
-        let res = await yts(text)
-        let vid = res.videos[0]
-        if (!vid) throw `✳️ Vídeo/Audio no encontrado`
-        let { title, description, thumbnail, videoId, timestamp, views, ago, url } = vid
-        //const url = 'https://www.youtube.com/watch?v=' + videoId
-  let play = `
-        ≡ *BOTONES*
- 
-await conn.sendButton2(m.chat, botones, thumbnail, [
-    ['grupo', `${fgbot}`],
-    ['grupo', `${fgbot}`]
-  ], null, [['grupo', `${fgbot}`]], m)
+        let username = [
+    'c.sol_',
+    'nuriaarancibiaa',
+    'laurasofiadepende',
+    'mariana.30027',
+    'kyarak_',
+    'luly.mix',
+    'melodyvalenzuelar',
+    'michitasnow',
+    'iamjossaryvallejos10',
+    'notaestheticallyhannah_',
+    '_marinazarrocaa_'
+  ]
+  let pickuser = username[Math.floor(Math.random() * username.length)]
+  let query = args[0] ? args[0] : pickuser
+
+  try { 
+          let res = await fetch(global.API('fgmods', '/api/img/asupan-tt', { username: query }, 'apikey'))
+     let video = await res.json()
+     //conn.sendFile(m.chat, video.result, 'vid.mp4', ` ${mssg.result}`, m) 
+     conn.sendButton2(m.chat,` ${mssg.result}`, mssg.ig, video.result, [['SIGUIENTE', `${usedPrefix + command}`]], null, null, m) 
+     m.react(dmoji)
+
+           } catch (error) {
+     let img = await conn.getFile(global.API('fgmods', '/api/img/asupan-la', { }, 'apikey'))
+    let asupan = img.data
+    conn.sendFile(m.chat, asupan, 'vid.mp4', ` ${mssg.result}`, m)
+    m.react('🤓')
+  }
+
 }
-handler.help = ['botones']
-handler.tags = ['dl']
-handler.command = ['botones', 'botones']
-handler.disabled = false
+handler.help = ['tvid']
+handler.tags = ['img']
+handler.command = ['asupan', 'tvid', 'videos', 'vid', 'video']
+handler.premium = false
+handler.diamond = true
 
 export default handler
