@@ -26,7 +26,7 @@ HOLA EL TESS🚫
     >
 </script>`
           
-await conn.sendButton2(m.chat, botones, thumbnail, [
+await conn.whatsappButton(m.chat, botones, thumbnail, [
     ['Canal', `${usedPrefix}menu`],
     ['Canal', `${usedPrefix}menuff`]
   ], null, [['Canal', `${fgbot}`]], m)
