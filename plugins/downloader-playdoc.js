@@ -28,8 +28,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     await conn.sendButton2(m.chat, play3, thumbnail, [
     ['🎶GRUPO', `${fgbot}`],
     ['🎥GRUPO', `${fgbot}`]
-  ], null, [['Canal', `${fgbot}`]], m)
-}
+  ], null, [['Canal', `${fgbot}`]], m});
     if (command == 'play3' || command == 'playdoc') {
       try {
         const q = '128kbps';
