@@ -12,14 +12,14 @@ let msg = generateWAMessageFromContent(m.chat, {
         },
         interactiveMessage: proto.Message.InteractiveMessage.create({
           body: proto.Message.InteractiveMessage.Body.create({
-            text: "PRUEBA BOTONES"
+            text: "XF"
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "PRUEBA BOTONES"
+            text: "PG"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
-            title: "PRUEBA BOTONES",
-            subtitle: "PRUEBA BOTONES",
+            title: "YH",
+            subtitle: "VG",
             hasMediaAttachment: false
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
