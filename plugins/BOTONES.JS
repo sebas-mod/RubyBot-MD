@@ -9,7 +9,7 @@ handler.botAdmin = true
 
 global.Mixto4 = `
 
- await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
+ await conn.sendButton2(m.chat, bontones, mssg.ig, thumbnail, [
     ['grupo', `${fgbot}`],
     ['grupo', `${fgbot}`]
   ], null, [['grupo', `${fgbot}`]], m)
