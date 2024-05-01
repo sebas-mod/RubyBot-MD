@@ -16,12 +16,6 @@ additionalText = 'video 🎥'}
 await conn.sendMessage(m.chat, {
 text: `*⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
 01:30 ━━━━━◉─────── 05:30
- 
-await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
-    ['🎶 MP3', `${usedPrefix}fgmp3 ${url}`],
-    ['🎥 MP4', `${usedPrefix}fgmp4 ${url}`]
-  ], null, [['Grupo', `${fgbot}`]], m)
-}
 *${additionalText}*`, 
 contextInfo: {
 externalAdReply: {
