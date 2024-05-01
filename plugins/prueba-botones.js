@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command }) => {
 
         if (!global.db.data.chats[m.chat].botones) throw `🚫 ${mssg.gpNsfw(usedPrefix)}`
-    //conn.sendButton(m.chat, `✅ ${fgbot} *${command}*`, fgyt, as.data, [[`▷▷ ${msg.next()}`, `${usedPrefix + command}`]], m)
+    //conn.sendButton(m.chat, `✅ ${fgbot} *${command}*`, fgyt, as.data, [[`▷▷ ${fgbot}`, `${usedPrefix + command}`]], m)
    m.react(xmoji) 
 break
 }
