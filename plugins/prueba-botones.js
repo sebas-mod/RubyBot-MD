@@ -29,11 +29,11 @@ let msg = generateWAMessageFromContent(m.chat, {
                 "buttonParamsJson": "{\"display_text\":\".menu\",\"id\":\"message\"}"
               },
               {
-                 "name": "cta_url",
+                 "name": "cta_grupo",
                  "buttonParamsJson": "{\"display_text\":\"grupo\",\"grupo\":\"https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6\",\"merchant_url\":\"https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6"}"
               },
               {
-                 "name": "cta_call",
+                 "name": "cta_llamar",
                  "buttonParamsJson": "{\"display_text\":\"call\",\"id\":\"message\"}"
               },
               {
