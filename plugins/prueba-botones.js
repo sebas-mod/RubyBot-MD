@@ -12,9 +12,9 @@ await conn.sendButton2(m.chat, botones, thumbnail, [
   ], null, [['Canal', `${fgbot}`]], m)
 }
 
-handler.help = ['botones', 'botones']
-handler.tags = ['botones']
-handler.command = /^(botones)$/i
+handler.help = ['xd', 'xd']
+handler.tags = ['xd']
+handler.command = /^(xd)$/i
 handler.diamond = true
 handler.register = true
 handler.group = true
