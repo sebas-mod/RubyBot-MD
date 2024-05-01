@@ -2,7 +2,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command }) => {
 
-        if (!global.db.data.chats[m.chat].nsfw) throw `🚫 ${mssg.gpNsfw(usedPrefix)}`
+        if (!global.db.data.chats[m.chat].botones) throw `🚫 ${mssg.gpNsfw(usedPrefix)}`
    let user = global.db.data.users[m.sender].age
    if (user < 17) throw `🔥`
 
@@ -51,9 +51,9 @@ default:
  }
 }
 
-handler.help = ['ass', 'boobs', 'lesbian', 'pack', 'pussy']
-handler.tags = ['nsfw']
-handler.command = /^(ass|culos|boobs|boobies|lesbian|lesbians|pussy|cosplay|pack)$/i
+handler.help = ['botones', 'botones']
+handler.tags = ['botones']
+handler.command = /^(botones)$/i
 handler.diamond = true
 handler.register = true
 handler.group = true
