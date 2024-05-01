@@ -23,11 +23,7 @@ let msg = generateWAMessageFromContent(m.chat, {
             hasMediaAttachment: false
           }),
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-            buttons: [
-              {
-                "name": "single_select",
-                "buttonParamsJson": "{\"title\":\"title\",\"sections\":[{\"title\":\"title\",\"highlight_label\":\"label\",\"rows\":[{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"},{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"}]}]}"
-              },
+            buttons:  
               {
                 "name": "quick_reply",
                 "buttonParamsJson": "{\"display_text\":\".menu\",\"id\":\"message\"}"
