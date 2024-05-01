@@ -1,42 +1,75 @@
+import pkg from '@whiskeysockets/baileys';
+const { generateWAMessageFromContent, proto } = pkg
 
-import fetch from 'node-fetch'
-let handler = async (m, { conn, usedPrefix, command }) => {
+var handler = async (m, { conn, usedPrefix }) => {
 
-        if (!global.db.data.chats[m.chat].botones) throw `
+let msg = generateWAMessageFromContent(m.chat, {
+  viewOnceMessage: {
+    message: {
+        "messageContextInfo": {
+          "deviceListMetadata": {},
+          "deviceListMetadataVersion": 2
+        },
+        interactiveMessage: proto.Message.InteractiveMessage.create({
+          body: proto.Message.InteractiveMessage.Body.create({
+            text: "test"
+          }),
+          footer: proto.Message.InteractiveMessage.Footer.create({
+            text: "test"
+          }),
+          header: proto.Message.InteractiveMessage.Header.create({
+            title: "test",
+            subtitle: "test",
+            hasMediaAttachment: false
+          }),
+          nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
+            buttons: [
+              {
+                "name": "single_select",
+                "buttonParamsJson": "{\"title\":\"title\",\"sections\":[{\"title\":\"title\",\"highlight_label\":\"label\",\"rows\":[{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"},{\"header\":\"header\",\"title\":\"title\",\"description\":\"description\",\"id\":\"id\"}]}]}"
+              },
+              {
+                "name": "quick_reply",
+                "buttonParamsJson": "{\"display_text\":\"quick_reply\",\"id\":\"message\"}"
+              },
+              {
+                 "name": "cta_url",
+                 "buttonParamsJson": "{\"display_text\":\"url\",\"url\":\"https://www.google.com\",\"merchant_url\":\"https://www.google.com\"}"
+              },
+              {
+                 "name": "cta_call",
+                 "buttonParamsJson": "{\"display_text\":\"call\",\"id\":\"message\"}"
+              },
+              {
+                 "name": "cta_copy",
+                 "buttonParamsJson": "{\"display_text\":\"copy\",\"id\":\"123456789\",\"copy_code\":\"message\"}"
+              },
+              {
+                 "name": "cta_reminder",
+                 "buttonParamsJson": "{\"display_text\":\"cta_reminder\",\"id\":\"message\"}"
+              },
+              {
+                 "name": "cta_cancel_reminder",
+                 "buttonParamsJson": "{\"display_text\":\"cta_cancel_reminder\",\"id\":\"message\"}"
+              },
+              {
+                 "name": "address_message",
+                 "buttonParamsJson": "{\"display_text\":\"address_message\",\"id\":\"message\"}"
+              },
+              {
+                 "name": "send_location",
+                 "buttonParamsJson": ""
+              }
+           ],
+          })
+        })
+    }
+  }
+}, {})
 
-HOLA EL TESS🚫
+await conn.relayMessage(msg.key.remoteJid, msg.message, { messageId: msg.key.id })
 
-<script
-    src='https://sleekflow.io/whatsapp-button.js'
-    async
-    onLoad="whatsappButton({
-    buttonName:'Info XIA BOT',
-    buttonIconSize: '22',
-    brandImageUrl:'https://telegra.ph/file/f12faf59a412d274a76fa.png',
-    buttonMargin:'true',
-    brandName:'XB-ASISTENCIA',
-    brandSubtitleText:'Por lo general, responde dentro de un día',
-    buttonSize:'regular',
-    buttonPosition:'left',
-    callToAction:'Iniciar chat',
-    phoneNumber:'59176181985',
-    welcomeMessage:'Hola 👋',
-    prefillMessage:'¡Hola, quiero saber más!',
-    })"
-    >
-</script>`
-          
-await conn.whatsappButton(m.chat, xd, thumbnail, [
-    ['Canal', `${usedPrefix}menu`],
-    ['Canal', `${usedPrefix}menuff`]
-  ], null, [['Canal', `${fgbot}`]], m)
 }
+handler.command = /^(mboton)$/i
 
-handler.help = ['xd', 'xd']
-handler.tags = ['xd']
-handler.command = /^(xd)$/i
-handler.diamond = true
-handler.register = true
-handler.group = true
-
-export default handler
+export default handler  
