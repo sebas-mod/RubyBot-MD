@@ -20,7 +20,7 @@ text: `*⇄ㅤ     ◁   ㅤ  ❚❚ㅤ     ▷ㅤ     ↻*
 await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
     ['🎶 MP3', `${usedPrefix}fgmp3 ${url}`],
     ['🎥 MP4', `${usedPrefix}fgmp4 ${url}`]
-  ], null, [['Grupo', `https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6`]], m)
+  ], null, [['Grupo', `${fgbot}`]], m)
 }
 *${additionalText}*`, 
 contextInfo: {
