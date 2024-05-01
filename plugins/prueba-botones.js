@@ -4,8 +4,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
         if (!global.db.data.chats[m.chat].botones) throw `🚫 ${mssg.gpNsfw(usedPrefix)}`
           await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
-    ['🎶 MP3', `${usedPrefix}fgmp3 ${url}`],
-    ['🎥 MP4', `${usedPrefix}fgmp4 ${url}`]
+    ['Canal', `${usedPrefix}menu`],
+    ['Canal', `${usedPrefix}menuff`]
   ], null, [['Canal', `${fgbot}`]], m)
 }
 
