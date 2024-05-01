@@ -13,7 +13,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
 ┌──────────────
 video
 └──────────────`
- await conn.sendButton2(m.chat, play, mssg.ig, thumbnail, [
+ await conn.sendButton2(m.chat, play7, thumbnail, [
     ['grupo', `${fgbot}`],
     ['grupo', `${fgbot}`]
   ], null, [['grupo', `${fgbot}`]], m)
