@@ -2,7 +2,10 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, command }) => {
 
-        if (!global.db.data.chats[m.chat].botones) throw `🚫 ${mssg.gpNsfw(usedPrefix)}`
+        if (!global.db.data.chats[m.chat].botones) throw `
+
+HOLA EL TESS
+🚫 ${mssg.gpNsfw(usedPrefix)}`
           await conn.sendButton2(m.chat, botones, mssg.ig, thumbnail, [
     ['Canal', `${usedPrefix}menu`],
     ['Canal', `${usedPrefix}menuff`]
