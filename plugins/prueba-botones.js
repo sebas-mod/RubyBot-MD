@@ -14,7 +14,7 @@ switch (type) {
 case 'ass':
 case 'culos':
     let as = await conn.getFile(global.API('fgmods', '/api/nsfw/ass', { }, 'apikey'))
-    conn.sendFile(m.chat, as.data, 'img.jpg', `✅ ${mssg.random} *${command}*`, m)
+    conn.sendFile(m.chat, as.data, 'img.jpg', `✅ *${command}*`, m)
     //conn.sendButton(m.chat, `✅ ${mssg.random} *${command}*`, fgyt, as.data, [[`▷▷ ${msg.next()}`, `${usedPrefix + command}`]], m)
    m.react(xmoji) 
 break
