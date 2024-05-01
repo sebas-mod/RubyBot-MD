@@ -10,7 +10,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
         //const url = 'https://www.youtube.com/watch?v=' + videoId
   let play = `
         ≡ *BOTONES*
- await conn.sendButton2(m.chat, botones, thumbnail, [
+ 
+await conn.sendButton2(m.chat, botones, thumbnail, [
     ['grupo', `${fgbot}`],
     ['grupo', `${fgbot}`]
   ], null, [['grupo', `${fgbot}`]], m)
