@@ -23,13 +23,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
 ❏ 🆔 *ID:* ${yt_play[0].videoId}
 ❏ 🪬 *Tipo:* ${yt_play[0].type}
 ❏ 🔗 *Link:* ${yt_play[0].url}\n
-❏ *_Enviando ${additionalText}, aguarde un momento．．．_*
-
-              nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
-            buttons: [
-              {
-                "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".grupos\",\"id\":\"message\"}"`.trim();
+❏ *_Enviando ${additionalText}, aguarde un momento．．．*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play3' || command == 'playdoc') {
       try {
