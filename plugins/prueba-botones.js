@@ -4,8 +4,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
         if (!global.db.data.chats[m.chat].botones) throw `
 
-HOLA EL TESS
-🚫 ${mssg.gpNsfw(usedPrefix)}`
+HOLA EL TESS🚫`
           await conn.sendButton2(m.chat, botones, thumbnail, [
     ['Canal', `${usedPrefix}menu`],
     ['Canal', `${usedPrefix}menuff`]
