@@ -25,7 +25,7 @@ let msg = generateWAMessageFromContent(m.chat, {
           nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
             buttons:  
               {
-                "name": "quick_reply",
+                "name": "quick_Menu",
                 "buttonParamsJson": "{\"display_text\":\".menu\",\"id\":\"message\"}"
               },
               {
