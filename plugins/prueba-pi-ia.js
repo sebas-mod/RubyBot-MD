@@ -20,7 +20,7 @@ var handler = async (m, { text,  usedPrefix, command }) => {
 if (!text) throw `*Error al usar PI-IA*\n\n*Ejemplo👇🏻*\n⚙️ ${usedPrefix + command} Recomienda una página porno\n⚙️ ${usedPrefix + command} {texto} By Lucky Bot`
 try {
 conn.sendPresenceUpdate('composing', m.chat);
-var apii = await fetch(`https://aemt.me/pi.ai?text=${text}`)
+var apii = await fetch(`https://pi.ai/talktext=${text}`)
 var res = await apii.json()
 await m.reply(res.result)
 } catch (e) {
