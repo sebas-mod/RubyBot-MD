@@ -1,3 +1,20 @@
+//import { googleIt } from '@bochilteam/scraper'
+import translate from '@vitalets/google-translate-api'
+import uploader from '../lib/uploadImage.js'
+import googleIt from 'google-it'
+import fetch from 'node-fetch'
+import axios from 'axios'
+import yts from 'yt-search'
+import cheerio from 'cheerio'
+import gpt from 'api-dylux'
+import gtts from 'node-gtts'
+import {readFileSync, unlinkSync} from 'fs'
+import {join} from 'path'
+import fs from 'fs' 
+import {Configuration, OpenAIApi} from 'openai';
+const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key})
+const openaiii = new OpenAIApi(configuration)
+const idioma = 'es'
 import fetch from 'node-fetch'
 var handler = async (m, { text,  usedPrefix, command }) => {
 if (!text) throw `*Error al usar PI-IA*\n\n*Ejemplo👇🏻*\n⚙️ ${usedPrefix + command} Recomienda una página porno\n⚙️ ${usedPrefix + command} {texto} By Lucky Bot`
