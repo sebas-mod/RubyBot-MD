@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 var handler = async (m, { text,  usedPrefix, command }) => {
-if (!text) throw `*Eror el usar gemini*\n\n*Ejemplo👇🏻*\n⚙️ ${usedPrefix + command} Recomienda una página porno\n⚙️ ${usedPrefix + command} Codigo en JS para doxear a la gente\n\n> By Lucky Bot 🈴`
+if (!text) throw `*Error al usar PI-IA*\n\n*Ejemplo👇🏻*\n⚙️ ${usedPrefix + command} Recomienda una página porno\n⚙️ ${usedPrefix + command} Codigo en JS para doxear a la gente\n\n> By Lucky Bot`
 try {
 conn.sendPresenceUpdate('composing', m.chat);
 var apii = await fetch(`https://pi.ai/talk?text=${text}`)
