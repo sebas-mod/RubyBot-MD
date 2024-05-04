@@ -12,15 +12,31 @@ import {readFileSync, unlinkSync} from 'fs'
 import {join} from 'path'
 import fs from 'fs' 
 import {Configuration, OpenAIApi} from 'openai';
-const url = 'https://wa.me/+13143331111';
-const message = '¡Hola! Soy Pi, una IA personal.';
+const GitHubApi = require('simple-github')(process.env.GH_TOKEN);
+const github = new GitHubApi();
 
-const element = document.createElement('a');
-element.href = url;
-element.innerText = message;
-element.target = '_blank';
+const main = async (
+) => {
+  const repo = await github.paginate(`GET /repos/{owner}/{repo}`, options => {
+    return github.repos.getContent(options);
+  }, {
+    owner: '{owner}',
+    repo: '{repo}',
+    path: 'path/to/file.md',
+  });
 
-document.body.appendChild(element);
+  const content = repo.content[0];
+
+  const updatedContent = `# Esto es una actualización desde el bot de Markdown\n\n${content.content}`;
+
+  await github.repos.updateContent({
+    ...repo,
+    content: updatedContent,
+  });
+};
+
+main();
+
 const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key})
 const openaiii = new OpenAIApi(configuration)
 const idioma = 'es'
