@@ -26,6 +26,7 @@ const isCommand6 = /^(translate|traducir|trad)$/i.test(command)
 const isCommand7 = /^(openaivoz|chatgptvoz|iavoz|robotvoz|openai2voz|chatgpt2voz|ia2voz|robot2voz|gatavoz|GataBotvoz|gptvoz|ai_voz|aivoce)$/i.test(command)
 const isCommand8 = /^(gemini|bard)$/i.test(command)
 const isCommand9 = /^(bing|bingia|iabing|copilot)$/i.test(command)
+const isCommand10 = /^(pi|pi|iapi|piia)$/i.test(command)
 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 async function reportError(e) {
@@ -233,6 +234,18 @@ if (!text) throw `*Escriba un texto usando el comando para usar a Gemini*`
 await conn.sendPresenceUpdate('composing', m.chat)       
 try {
 var apii = await fetch(`https://aemt.me/gemini?text=${text}`)
+var res = await apii.json()
+await m.reply(res.result)
+} catch (e) {
+reportError(e)
+}
+break
+
+case isCommand10:
+if (!text) throw `*Escriba un texto usando el comando para usar a Pi*`
+await conn.sendPresenceUpdate('composing', m.chat)       
+try {
+var apii = await fetch(`https://aemt.me/pi.ia?text=${text}`)
 var res = await apii.json()
 await m.reply(res.result)
 } catch (e) {
