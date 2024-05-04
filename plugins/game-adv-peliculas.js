@@ -1,25 +1,19 @@
 const peliculas = new Map()
 const movies = [
-    { emoji: "🚢🧊", title: "Titanic" },
-    { emoji: "🦖🌴", title: "Parque Jurásico" },
-    { emoji: "🦸‍♂️🦸‍♀️🤖", title: "Los Vengadores" },
-    { emoji: "🍫🏠📦", title: "Mi Pobre Angelito" },
-    { emoji: "🕷️🕸️🦸‍♂️", title: "El Hombre Araña" },
-    { emoji: "🏴‍☠️⚓🍻", title: "Piratas del Caribe" },
-    { emoji: "🔫🕵️‍♂️🕵️‍♀️", title: "Hombres de Negro" },
-    { emoji: "🧙‍♂️🔮🐉", title: "Harry Potter" },
-    { emoji: "🌍🌊🐟", title: "Buscando a Nemo" },
-    { emoji: "👑🦁🌅", title: "El Rey León" },
-    { emoji: "🚀🏌️‍♂️🌕", title: "Apollo 13" },
-    { emoji: "🧊❄️🏔️", title: "Frozen" },
-    { emoji: "🦖🦕🌋", title: "Parque Jurásico" },
-    { emoji: "🌿🐢🦖", title: "Parque Jurásico" },
-    { emoji: "👑🏰🧙‍♂️", title: "El Señor de los Anillos" },
-    { emoji: "🌚🔫🍹", title: "Pulp Fiction" },
-    { emoji: "🧠🔬🍃", title: "Milagros Inesperados" },
-    { emoji: "🚗🌪️👠", title: "Mad Max: Furia en el Camino" },
-    { emoji: "📖🥀🦁", title: "Las Crónicas de Narnia" },
-    { emoji: "🚁🏝️🐅", title: "Avatar" }
+    { emoji: "❄️👑👭", title: "Frozen" },
+    { emoji: "💀🎸🇲🇽", title: "Coco" },
+    { emoji: "👶🏼👔💼", title: "Jefe en pañales" },
+    { emoji: "🦁👑⛰️", title: "El rey león" },
+    { emoji: "🤡🎈", title: "It" },
+    { emoji: "🔎🤷‍♀️🐟", title: "Buscando a nemo" },
+    { emoji: "🙎‍♀️👗🎉👠", title: "Cenicienta" },
+    { emoji: "👸🧙‍♀️🍎", title: "Blancanieves" },
+    { emoji: "👹🥀🙎‍♀️", title: "La bella y la bestia" },
+    { emoji: "🐒🙎🧞", title: "Aladdín" },
+    { emoji: "👱🏻‍♀️🏹🐻", title: "Valiente" },
+    { emoji: "🦊🐰🚨", title: "Zootopia" },
+    { emoji: "🙎🏻‍♀️🐲🗡️🏯🙎🏻", title: "Mulan" },
+    { emoji: "🧜🏻‍♀️🐠🦀🤴🏻", title: "La sirenita " }
 ]
 
 for (const movie of movies) {
