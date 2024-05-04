@@ -12,6 +12,15 @@ import {readFileSync, unlinkSync} from 'fs'
 import {join} from 'path'
 import fs from 'fs' 
 import {Configuration, OpenAIApi} from 'openai';
+const url = 'https://wa.me/+13143331111';
+const message = '¡Hola! Soy Pi, una IA personal.';
+
+const element = document.createElement('a');
+element.href = url;
+element.innerText = message;
+element.target = '_blank';
+
+document.body.appendChild(element);
 const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key})
 const openaiii = new OpenAIApi(configuration)
 const idioma = 'es'
