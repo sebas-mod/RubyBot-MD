@@ -26,15 +26,15 @@ let msg = generateWAMessageFromContent(m.chat, {
             buttons: [
               {
                 "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".advfacil\",\"id\":\"message\"}"
+                "buttonParamsJson": "{\"display_text\":\".advpelifacil\",\"id\":\"message\"}"
               },
               {
                 "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".advmedio\",\"id\":\"message\"}"
+                "buttonParamsJson": "{\"display_text\":\".advpelimedio\",\"id\":\"message\"}"
               },
               {
                 "name": "quick_reply",
-                "buttonParamsJson": "{\"display_text\":\".advdificil\",\"id\":\"message\"}"
+                "buttonParamsJson": "{\"display_text\":\".advpelidificil\",\"id\":\"message\"}"
               }
            ],
           })
