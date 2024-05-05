@@ -351,8 +351,8 @@ global.reloadHandler = async function(restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate);
   }
 
-  conn.welcome = '*Recientemente se ha incorporado al grupo un nuevo miembro.*\n\n*◦  Grupo:* @subject\n*◦  Se unio:* @user\n*◦  Ejecutado por:* 𝑫𝒚𝒍𝒂𝒏𝑩𝒐𝒕-𝑴𝑫';
-  conn.bye = '*Recientemente se ha salido un miembro adiós y no vuelvas.*\n\n*◦  Grupo:* @subject\n*◦  Se salio:* @user\n*◦  Ejecutado por:* 𝑫𝒚𝒍𝒂𝒏𝑩𝒐𝒕-𝑴𝑫';
+  conn.welcome = '*Recientemente se ha incorporado al grupo un nuevo miembro.*\n\n*◦  Grupo:* @subject\n*◦  Se unio:* @user\n*◦  Ejecutado por:* 𝙍𝙪𝙗𝙮𝘽𝙤𝙩-𝙈𝘿';
+  conn.bye = '*Recientemente se ha salido un miembro adiós y no vuelvas.*\n\n*◦  Se salio:* @user\n*◦  Ejecutado por:* 𝙍𝙪𝙗𝙮𝘽𝙤𝙩-𝙈𝘿';
   conn.spromote = '🐲𝑳𝑼𝑪𝑲𝒀 𝑩𝑶𝑻 𝑨𝑵𝑼𝑵𝑪𝑰𝑨 𝑸𝑼𝑬  @user 𝑺𝑬 𝑺𝑼𝑴𝑨 𝑨𝑳 𝑮𝑹𝑼𝑷𝑶 𝑫𝑬 𝑨𝑫𝑴𝑰𝑺';
   conn.sdemote = '🐲𝑳𝑼𝑪𝑲𝒀 𝑩𝑶𝑻 𝑨𝑵𝑼𝑵𝑪𝑰𝑨 𝑸𝑼𝑬 @user  𝑨𝑩𝑨𝑵𝑫𝑶𝑵𝑨 𝑬𝑳 𝑮𝑹𝑼𝑷𝑶 𝑫𝑬 𝑨𝑫𝑴𝑰𝑺';
   conn.sDesc = '🐲𝑳𝑼𝑪𝑲𝒀 𝑩𝑶𝑻 𝑨𝑵𝑼𝑵𝑪𝑰𝑨 𝑸𝑼𝑬 𝑳𝑨 𝑫𝑬𝑺𝑪𝑹𝑰𝑷𝑪𝑰𝑶𝑵 𝑫𝑬𝑳 𝑮𝑹𝑼𝑷𝑶 𝑨 𝑺𝑰𝑫𝑶 𝑴𝑶𝑫𝑰𝑭𝑰𝑪𝑨𝑫𝑨';
