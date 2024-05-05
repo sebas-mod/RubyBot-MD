@@ -35,8 +35,7 @@
 ### `● 🤖𝙂𝙍𝙐𝙋𝙊 𝘿𝙀 𝙎𝙊𝙋𝙊𝙍𝙏𝙀🤖 ●`
 <a href="https://chat.whatsapp.com/LcFTUnvu0Tw1tCnA2ybdR6" target="blank"><img src="https://img.shields.io/badge/GRUPO_DE_SOPORTE-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-### 📄 CANAL DE WHATSAPP 
-### `● 📄𝘾𝘼𝙉𝘼𝙇 𝙒𝙃𝘼𝙏𝙎𝘼𝙋𝙋📄 ●`
+### ●📄 CANAL DE WHATSAPP ●
 <a href="https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y" target="blank"><img src="https://img.shields.io/badge/CANAL_DE_BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 ### `● ⚠️𝑰𝒎𝒑𝒐𝒓𝒕𝒂𝒏𝒕𝒆⚠️ ●` 
