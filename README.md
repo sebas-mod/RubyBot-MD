@@ -106,13 +106,6 @@ termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
 
 
-### 🌟 DESARROLLADORES
-<a href="https://github.com/GataNina-Li/GataBot-MD/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=GataNina-Li/GataBot-MD" /> 
-</a>
-
-### 💜 AGRADECIMIENTOS
-[![ale-rmz](https://github.com/ale-rmz.png?size=60)](https://github.com/ale-rmz) 
 
 ### 💜 CREADOR 
 [![Karim-off](https://github.com/Karim-off.png?size=100)](https://github.com/Karim-off) 
