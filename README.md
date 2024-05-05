@@ -53,8 +53,8 @@
   
 `● 𝑳𝒖𝒄𝒌𝒚-𝑩𝒐𝒕-𝑴𝑫 - 𝑲𝒂𝒓𝒊𝒎-𝒐𝒇𝒇 ●`
 
-### 💜INSTALACIÓN MANUAL POR TERMUX
-> **Note** Comandos para instalar de forma manual
+### 💜𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝘾𝙄𝙊𝙉 𝙏𝙀𝙍𝙈𝙐𝙓
+> **Note** Comandos para instalar de forma manual en termux o otra app
 ```bash
 termux-setup-storage
 ```
