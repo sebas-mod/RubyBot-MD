@@ -47,7 +47,7 @@ npm start
 > **Note** Guardar los archivos en la ubicación: storage/downloads/GataBot-MD-master/GataBot-MD-master   
 ----
 ### 💟 USAR RUBY 24/7 EN TERMUX 
-> Ejecutar estos comandos dentro de la carpeta GataBot-MD
+> Ejecutar estos comandos dentro de la carpeta RubyBot-MD
 ```bash
 termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
