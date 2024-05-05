@@ -44,7 +44,7 @@ npm start
 
 * #### APLICACIÓN RECOMENDADA PARA [`DESCOMPRIMIR`](https://play.google.com/store/apps/details?id=com.rarlab.rar)
 * #### APLICACIÓN RECOMENDADA PARA EDITAR [`NÚMERO DE OWNER`](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
-> **Note** Guardar los archivos en la ubicación: storage/downloads/GataBot-MD-master/GataBot-MD-master   
+> **Note** Guardar los archivos en la ubicación: storage/downloads/RubyBot-MD-master/RubyBot-MD-master   
 ----
 ### 💟 USAR RUBY 24/7 EN TERMUX 
 > Ejecutar estos comandos dentro de la carpeta RubyBot-MD
