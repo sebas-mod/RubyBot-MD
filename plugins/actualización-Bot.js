@@ -18,10 +18,10 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `┏━━━━━🐲𝑳𝒖𝒄𝒌𝒚𝑩𝒐𝒕-𝑴𝑫🐲━━━━┓
+    const str = `┏━━━━━💜𝙍𝙪𝙗𝙮𝘽𝙤𝙩-𝙈𝘿💜━━━━┓
 ┃
 ┃ෆ _Tenemos novedades nuevas_
-┃ෆ _en el bot Lucky tanto ya_
+┃ෆ _en el Bot Ruby tanto ya_
 ┃ෆ _disponibles y aún no_
 ┃ෆ _abajo una lista de lo nuevo_
 ┃
@@ -35,7 +35,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┃
 ┃
 ┃ෆ _Esperamos tener más comandos_
-┃ෆ _disponibles para LuckyBot-MD_
+┃ෆ _disponibles para RubyBot-MD_
 ┃ෆ _y si me apoyas con una idea_
 ┃ෆ _para nuevos comandos para bot_
 ┃ෆ _me lo haces saber Ami privado_
