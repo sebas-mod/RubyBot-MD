@@ -102,8 +102,7 @@ npm start
 ### 🚀 USAR GATABOT 24/7 EN TERMUX 
 > Ejecutar estos comandos dentro de la carpeta GataBot-MD
 ```bash
-termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
-
+termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 
 ### 🌟 DESARROLLADORES
 <a href="https://github.com/GataNina-Li/GataBot-MD/graphs/contributors">
