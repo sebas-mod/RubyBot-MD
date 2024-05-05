@@ -23,8 +23,24 @@
 </a>
 
 
-### 👨‍💻 INFORMACIÓN
-
+### 👨‍💻 INSTALACIÓN TERMUX
+> **Note** Comandos para instalar de forma manual en termux o otra app
+```bash
+termux-setup-storage
+```
+```bash
+apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
+```
+```bash
+git clone https://github.com/GataNina-Li/GataBot-MD && cd GataBot-MD
+```
+```bash
+yarn install && npm install
+```
+```bash
+npm start
+```
+> **Warning** Si aparece (Y/I/N/O/D/Z) [default=N] ? use la letra "y" + "ENTER" para continuar con la instalación 
 
 ```bash
 𝘽𝙤𝙩 𝙙𝙚 𝙪𝙨𝙤 𝙚𝙭𝙘𝙡𝙪𝙨𝙞𝙫𝙤 𝙣𝙤 𝙥𝙪𝙗𝙡𝙞𝙘𝙤 ✖️
@@ -58,23 +74,7 @@
 `● 𝑳𝒖𝒄𝒌𝒚-𝑩𝒐𝒕-𝑴𝑫 - 𝑲𝒂𝒓𝒊𝒎-𝒐𝒇𝒇 ●`
 
 ### 💜𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝘾𝙄𝙊𝙉 𝙏𝙀𝙍𝙈𝙐𝙓
-> **Note** Comandos para instalar de forma manual en termux o otra app
-```bash
-termux-setup-storage
-```
-```bash
-apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
-```
-```bash
-git clone https://github.com/GataNina-Li/GataBot-MD && cd GataBot-MD
-```
-```bash
-yarn install && npm install
-```
-```bash
-npm start
-```
-> **Warning** Si aparece (Y/I/N/O/D/Z) [default=N] ? use la letra "y" + "ENTER" para continuar con la instalación 
+
 ------------------
 ### 📁 (OPCIÓN 3) INSTALACIÓN POR TERMUX - ARCHIVOS
 > **Note** Descargué y Descomprime
