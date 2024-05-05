@@ -42,6 +42,16 @@ npm start
 ```
 > **Warning** Si aparece (Y/I/N/O/D/Z) [default=N] ? use la letra "y" + "ENTER" para continuar con la instalación 
 
+* #### APLICACIÓN RECOMENDADA PARA [`DESCOMPRIMIR`](https://play.google.com/store/apps/details?id=com.rarlab.rar)
+* #### APLICACIÓN RECOMENDADA PARA EDITAR [`NÚMERO DE OWNER`](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
+> **Note** Guardar los archivos en la ubicación: storage/downloads/GataBot-MD-master/GataBot-MD-master   
+----
+### 💟 USAR RUBY 24/7 EN TERMUX 
+> Ejecutar estos comandos dentro de la carpeta GataBot-MD
+```bash
+termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
+```
+
 ### 💬 DUDAS DEL BOT 
 <a href="http://wa.me/59897246324" target="blank"><img src="https://img.shields.io/badge/KARIM_CREADOR-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
@@ -51,23 +61,6 @@ npm start
 ### 📄 CANAL DE WHATSAPP
 <a href="https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y" target="blank"><img src="https://img.shields.io/badge/CANAL_DE_BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
-### `● ⚠️𝑰𝒎𝒑𝒐𝒓𝒕𝒂𝒏𝒕𝒆⚠️ ●` 
-
-```bash
-𝑬𝒍 𝑩𝒐𝒕 𝒆𝒔 𝒅𝒆 𝒖𝒔𝒐 𝒆𝒙𝒄𝒍𝒖𝒔𝒊𝒗𝒐 𝒄𝒓𝒆𝒂𝒅𝒐 𝒚 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐 
-𝒑𝒐𝒓 𝑲𝒂𝒓𝒊𝒎-𝒐𝒇𝒇 𝒔𝒊 𝒒𝒖𝒊𝒆𝒓𝒆𝒔 𝒄𝒐𝒍𝒂𝒃𝒐𝒓𝒂𝒄𝒊ó𝒏 𝒆𝒔𝒄𝒓𝒊𝒃𝒆𝒎𝒆!! 
-𝑵𝒐 𝒊𝒏𝒕𝒆𝒏𝒕𝒆𝒔 𝒄𝒐𝒑𝒊𝒂𝒓 𝒆𝒍 𝒃𝒐𝒕 𝒑𝒐𝒓 𝒇𝒂𝒗𝒐𝒓 𝒓𝒆𝒔𝒑𝒆𝒕𝒂 
-𝒆𝒍 𝒕𝒓𝒂𝒃𝒂𝒋𝒐 𝒅𝒆 𝒄𝒂𝒅𝒂 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒚 𝒎𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐𝒓
-```
-
-
-## `● 🧸𝑪𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝑩𝒐𝒕🧸 ●` 
-<a href="https://github.com/Karim-off"><img src="https://github.com/Karim-off.png" width="300" height="300" alt="Karim"/></a>
-  
-
-
-  
-`● 𝑳𝒖𝒄𝒌𝒚-𝑩𝒐𝒕-𝑴𝑫 - 𝑲𝒂𝒓𝒊𝒎-𝒐𝒇𝒇 ●`
 
 ### 💜𝙄𝙉𝙎𝙏𝘼𝙇𝘼𝘾𝙄𝙊𝙉 𝙏𝙀𝙍𝙈𝙐𝙓
 
@@ -95,15 +88,7 @@ npm install
 ```bash
 npm start
 ```
-* #### APLICACIÓN RECOMENDADA PARA [`DESCOMPRIMIR`](https://play.google.com/store/apps/details?id=com.rarlab.rar)
-* #### APLICACIÓN RECOMENDADA PARA EDITAR [`NÚMERO DE OWNER`](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
-> **Note** Guardar los archivos en la ubicación: storage/downloads/GataBot-MD-master/GataBot-MD-master   
-----
-### 🚀 USAR GATABOT 24/7 EN TERMUX 
-> Ejecutar estos comandos dentro de la carpeta GataBot-MD
-```bash
-termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
-```
+
 
 
 
