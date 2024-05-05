@@ -53,3 +53,53 @@
   
 `● 𝑳𝒖𝒄𝒌𝒚-𝑩𝒐𝒕-𝑴𝑫 - 𝑲𝒂𝒓𝒊𝒎-𝒐𝒇𝒇 ●`
 
+### 🪄 (OPCIÓN 2) INSTALACIÓN MANUAL POR TERMUX - GITHUB 
+> **Note** Comandos para instalar de forma manual
+```bash
+termux-setup-storage
+```
+```bash
+apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
+```
+```bash
+git clone https://github.com/GataNina-Li/GataBot-MD && cd GataBot-MD
+```
+```bash
+yarn install && npm install
+```
+```bash
+npm start
+```
+> **Warning** Si aparece (Y/I/N/O/D/Z) [default=N] ? use la letra "y" + "ENTER" para continuar con la instalación 
+------------------
+### 📁 (OPCIÓN 3) INSTALACIÓN POR TERMUX - ARCHIVOS
+> **Note** Descargué y Descomprime
+### [`GataBot-MD ~ Archivos`](https://github.com/GataNina-Li/GataBot-MD/archive/refs/heads/master.zip)
+[![blog](https://img.shields.io/badge/Termux-GataBotMD-FF0000?style=for-the-badge&logo=youtube&logoColor=white)
+](https://youtu.be/UcWlyQ8u5HE)
+```bash
+termux-setup-storage
+```
+```bash
+apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
+```
+```bash
+cd storage/downloads/GataBot-MD-master/GataBot-MD-master 
+```
+```bash
+yarn install
+```
+```bash
+npm install
+```
+```bash
+npm start
+```
+* #### APLICACIÓN RECOMENDADA PARA [`DESCOMPRIMIR`](https://play.google.com/store/apps/details?id=com.rarlab.rar)
+* #### APLICACIÓN RECOMENDADA PARA EDITAR [`NÚMERO DE OWNER`](https://play.google.com/store/apps/details?id=com.rhmsoft.code)
+> **Note** Guardar los archivos en la ubicación: storage/downloads/GataBot-MD-master/GataBot-MD-master   
+----
+### 🚀 USAR GATABOT 24/7 EN TERMUX 
+> Ejecutar estos comandos dentro de la carpeta GataBot-MD
+```bash
+termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs 
