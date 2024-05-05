@@ -111,9 +111,9 @@ termux-wake-lock && npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 <img src="https://contrib.rocks/image?repo=GataNina-Li/GataBot-MD" /> 
 </a>
 
-### 🌟 AGRADECIMIENTOS
+### 💜 AGRADECIMIENTOS
 [![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=60)](https://github.com/BrunoSobrino) 
 
-### 🌟 CREADORA 
+### 💜 CREADOR 
 [![Karim-off](https://github.com/Karim-off.png?size=100)](https://github.com/Karim-off) 
-> Copyright (c) 2023 **[GataNina-Li](https://github.com/Karim-off/LuckyBot-MD/blob/master/LICENSE)**.
+> Copyright (c) 2023 **[Karim-off](https://github.com/Karim-off/LuckyBot-MD/blob/master/LICENSE)**.
