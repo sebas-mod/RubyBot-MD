@@ -53,5 +53,5 @@ gam.delete(m.sender)
 }}
 handler.help = ['jueguito']
 handler.tags = ['game']
-handler.command = ['advfacil']
+handler.command = ['advpelifacil']
 export default handler
