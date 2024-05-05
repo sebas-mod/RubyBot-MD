@@ -15,10 +15,8 @@ let handler = (m, { usedPrefix, command, text }) => {
     const cekusia = bulan === birth[1] && tanggal === birth[2] ? `${age} - Feliz cumpleaños 🥳` : age
 
     const teks = `
-┏━═━═━═━═━═━═━═━═━═━═━┓
-┃🫅𝑬𝒅𝒂𝒅: ${cekusia}
-┃💟𝑺𝒊𝒈𝒏𝒐 𝒁𝒐𝒅𝒊𝒂𝒄𝒂𝒍: ${zodiac}
-┗━═━═━═━═━═━═━═━═━═━═━┛
+❄️𝙀𝘿𝘼𝘿: ${cekusia}
+❄️𝙎𝙄𝙂𝙉𝙊: ${zodiac}
 `.trim()
     m.reply(teks)
 }
