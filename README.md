@@ -53,7 +53,7 @@
   
 `● 𝑳𝒖𝒄𝒌𝒚-𝑩𝒐𝒕-𝑴𝑫 - 𝑲𝒂𝒓𝒊𝒎-𝒐𝒇𝒇 ●`
 
-### 🪄 (OPCIÓN 2) INSTALACIÓN MANUAL POR TERMUX - GITHUB 
+### 💜INSTALACIÓN MANUAL POR TERMUX
 > **Note** Comandos para instalar de forma manual
 ```bash
 termux-setup-storage
