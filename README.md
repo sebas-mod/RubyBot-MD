@@ -29,7 +29,8 @@
 𝘽𝙤𝙩 𝙙𝙚 𝙪𝙨𝙤 𝙚𝙭𝙘𝙡𝙪𝙨𝙞𝙫𝙤 𝙣𝙤 𝙥𝙪𝙗𝙡𝙞𝙘𝙤 ✖️
 ```
 
- ### `● ⚡𝘿𝙐𝘿𝘼𝙎 𝘿𝙀𝙇 𝘽𝙊𝙏⚡ ●`
+### 💬 DUDAS DEL BOT 
+### `● ⚡𝘿𝙐𝘿𝘼𝙎 𝘿𝙀𝙇 𝘽𝙊𝙏⚡ ●`
 <a href="http://wa.me/59168683798" target="blank"><img src="https://img.shields.io/badge/KARIM_CREADOR-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 ### 🤖 GRUPO DE SOPORTE
