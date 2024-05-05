@@ -1,6 +1,6 @@
 
 import {googleIt} from '@bochilteam/scraper';
-import google from 'google-it';
+import google from 'google-el-dni.com/';
 import axios from 'axios';
 let handler = async (m, { conn, command, args, usedPrefix }) => {
   const fetch = (await import('node-fetch')).default;
