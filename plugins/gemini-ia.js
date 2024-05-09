@@ -76,7 +76,7 @@ text = m.quoted.text
 } else return conn.reply(m.chat, lenguajeGB.smsOpenai1() + `\n*${usedPrefix + command}* ${lenguajeGB.smsOpenai2()}\n\n*${usedPrefix + command}* ${lenguajeGB.smsOpenai3()}` , m)
 await conn.sendPresenceUpdate('composing', m.chat)
 try {
-let syms = `Actuaras como un Bot de WhatsApp el cual fue creado por GataNina-Li, tu seras GataBotLite-MD`
+let syms = `Actuaras como un Bot de WhatsApp el cual fue creado por Angelito, tu seras RubyBot-MD`
 let res = await gpt.ChatGpt(text, syms)
 await m.reply(res.text)
 } catch {
@@ -153,7 +153,7 @@ reportError(e)}
 break   
 
 case isCommand5:
-if (!text) return m.reply(lenguajeGB.smsMalused2() + `*${usedPrefix + command}* GataBot`)
+if (!text) return m.reply(lenguajeGB.smsMalused2() + `*${usedPrefix + command}* RubyBot`)
 try{
 await conn.reply(m.chat, global.wait, m)
 let results = await yts(text)
