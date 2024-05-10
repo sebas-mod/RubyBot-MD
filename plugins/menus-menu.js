@@ -22,9 +22,9 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `┏━━━•💌 𝙍𝙪𝙗𝙮𝘽𝙤𝙩-𝙈𝘿 💌•━━━━┓
-│ ┌──────────────────┐
-│  •💜¡𝙃𝙊𝙇𝘼! @${m.sender.split`@`[0]}
-│ └──────────────────┘
+│╭─────────♡─────────╮
+││•💜¡𝙃𝙊𝙇𝘼! @${m.sender.split`@`[0]}
+│╰─────────♡─────────╯
 ││•💜𝘾𝙍𝙀𝘼𝘿𝙊𝙍/𝘼 
 ││•💜 wa.me/59168683798
 ││•💜𝙑𝙀𝙍𝙎𝙄𝙊𝙉 𝘿𝙀𝙇 𝘽𝙊𝙏: 𝟹.𝟸.𝟷
