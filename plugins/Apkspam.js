@@ -1,7 +1,6 @@
 import fetch from 'node-fetch';
 const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems}) => {
   try {
-    const pp = imagen7;
     // let vn = './media/menu.mp3'
     const d = new Date(new Date + 3600000);
     const locale = 'es';
@@ -41,9 +40,10 @@ https://www.mediafire.com/file/elvm4t2m0tf25ux/SPAM_WHATSAPP.apk/file
     conn.reply(m.chat, '𝑨𝒑𝒌 𝒆𝒏𝒗𝒊𝒂𝒅𝒐 📩 𝒔𝒊 𝒏𝒐 𝒔𝒆 𝒆𝒏𝒗𝒊𝒐 𝒓𝒆𝒑𝒐𝒓𝒕𝒂𝒍𝒐 𝒄𝒐𝒏 𝒆𝒍 𝒔𝒕𝒂𝒇𝒇 𝒐 𝒄𝒓𝒆𝒂𝒅𝒐𝒓 𝒅𝒆𝒍 𝒃𝒐𝒕', m);
   }
 };
-handler.command = /^(Apkspam|apkspam|spamapk)$/i;
-handler.exp = 50;
-handler.fail = null;
+
+handler.help = ["apkspam"];
+handler.tags = ["dl"];
+handler.command = ["apkspam"];
 export default handler;
 function clockString(ms) {
   const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000);
